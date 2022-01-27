@@ -7,6 +7,6 @@ public class UseMyArrayList {
         System.out.println(collection.add(1));
         System.out.println(collection.add(1));
         System.out.println(collection.add(1));
-
+        
     }
 }
