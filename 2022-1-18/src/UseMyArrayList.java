@@ -1,11 +1,12 @@
+import java.lang.reflect.Array;
+import java.util.*;
+
 public class UseMyArrayList {
     public static void main(String[] args) {
-        MyArrayList myArrayList = new MyArrayList();
-        myArrayList.add(1);
-        myArrayList.add(2);
+        Collection<Integer> collection = new PriorityQueue<>();
+        System.out.println(collection.add(1));
+        System.out.println(collection.add(1));
+        System.out.println(collection.add(1));
 
-        MyArrayList2<String> stringMyArrayList2 = new MyArrayList2<String>();
-        stringMyArrayList2.add("1");
-        stringMyArrayList2.add("2");
     }
 }
