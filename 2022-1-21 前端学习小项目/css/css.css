@@ -28,6 +28,8 @@ header .header-top .logo {
     width: 192px;
     height: 63px;
     float: left;
+    color: #00978E;
+    font-size: 20px;
 }
 header .header-top .logo h1 {
     width: 192px;
@@ -63,7 +65,7 @@ header .header-top .tool .pic .chinese-icon {
 header .header-top .tool .search {
     width: 264px;
     height: 28px;
-    border: 1px solid #999999;
+    border: 1px solid rgba(153, 153, 153, 0.55);
 }
 header .header-top .tool .search input {
     float: left;
@@ -91,15 +93,373 @@ header .header-top .tool .search {
     margin-top: 10px;
 }
 
+header .main-nav {
+    height: 60px;
+    background-color: #00978E;
+    margin-top: 30px;
+}
+header .main-nav ul {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+header .main-nav li {
+    width: 150px;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+}
 
+header .main-nav li a {
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    color: white;
+    font-size: 16px;
+}
+header .main-nav li:nth-child(1) {
+    background-color: #015E58;
+}
+header .main-nav li a:hover {
+    background-color: orange;
+}
 
+.banner {
+    width: 100%;
+    position: relative;
+}
+.banner .banner-img {
+    width: 100%;
+}
+.banner .center {
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -600px;
+}
+.banner .center .left-btn {
+    width: 56px;
+    height: 74px;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.35);
+    top: 50%;
+    margin-top: -37px;
+}
+.banner .center .right-btn {
+    width: 56px;
+    height: 74px;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.35);
+    top: 50%;
+    margin-top: -37px;
+    right: 0;
+}
+.banner .center h2 {
+    width: 480px;
+    height: 79px;
+    color: #015E58;
+    font-size: 60px;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 148px;
+}
+.banner ol {
+    position: absolute;
+    width: 120px;
+    height: 12px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -60px;
+}
+.banner ol li {
+    float: left;
+    width: 20px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.banner ol li:last-child {
+    margin-right: 0;
+}
+.banner ol li.cur {
+    width: 30px;
+    background-color: #00978E;
+}
+.content .useful-links ul {
+    overflow: hidden;
+}
+.content .useful-links{
+    width: 906px;
+    height: 148px;
+    margin: 0 auto;
+    padding-top: 61px;
+}
 
+.content .useful-links ul li {
+    float: left;
+    width: 106px;
+    margin-right: 54px;
+}
+.content .useful-links ul li:last-child {
+    margin-right: 0;
+}
+.content .useful-links ul li span{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    line-height: 40px;
+}
 
+.content .news-and-notice {
+    width: 1200px;
+    height: 376px;
+    margin: 0 auto;
+    margin-top: 56px;
+}
+.content .news-and-notice .news {
+    float: left;
+    width: 877px;
+    height: 376px;
+}
+.content .news-and-notice .notice {
+    float: left;
+    width: 323px;
+    height: 376px;
+}
+.content .news-and-notice .news h3 {
+    height: 33px;
+    margin-bottom: 10px;
+}
+.content .news-and-notice .news .news-content .hot-news {
+    position: relative;
+    float: left;
+    width: 422px;
+    height: 333px;
+    margin-right: 20px;
+}
+.content .news-and-notice .news .news-content .hot-news img {
+    width: 422px;
+    height: 333px;
+}
+.content .news-and-notice .news .news-content ul {
+    position: relative;
+    float: left;
+    width: 435px;
+    height: 328px;
+}
+.content .news-and-notice .news .news-content ul li {
+    line-height: 41px;
+}
+.content .news-and-notice .news .news-content ul li span {
+    float: right;
+    position: absolute;
+    right: 49px;
+}
+.content .news-and-notice .news .news-content ul li.spec a {
+    color:  #00978E;
+    font-weight: bold;
+}
+.content .news-and-notice .news .news-content ul li a {
+    color: black;
+}
+.content .news-and-notice .news .news-content .hot-news .info{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(8,8,8,0.4);
+    color: white;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    line-height: 40px;
+}
 
+.content .news-and-notice h3 {
+    height: 33px;
+    margin-bottom: 10px;
+}
 
+.content .news-and-notice ol li span {
+    float: left;
+    color: white;
+    width: 53px;
+    line-height: 57px;
+    background-color: #00978E;
+    text-align: center;
+    font-size: 30px;
+}
+.content .news-and-notice ol li dl {
+    float: left;
+    margin-left: 16px;
+}
+.content .news-and-notice ol li {
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+.content .news-and-notice ol li dl a {
+    color: black;
+}
 
+.content .ad-img {
+    width: 1200px;
+    margin: 20px auto;
+}
 
+.content .introduce-of-office {
+    width: 100%;
+    height: 437px;
+    background-color: #FAFAFA;
+    margin-top: 30px;
+}
+.content .introduce-of-office .h31 {
+    width: 64px;
+    height: 21px;
+    font-size: 16px;
+}
+.content .introduce-of-office .mid {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 37px;
+}
+.content .introduce-of-office .mid .more {
+    position: absolute;
+    top: 39px;
+    right: 0;
+    color: #999999;
+}
+.content .introduce-of-office .mid .dep-content .col {
+    float: left;
+    width: 300px;
+    margin-top: 19px;
+}
+.content .introduce-of-office .mid .dep-content .col h4 {
+    text-align: center;
+    position: relative;
+}
+.content .introduce-of-office .mid .dep-content .col h4::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #00978E;
+    top: 13px;
+    left: 76px;
+}
+.content .introduce-of-office .mid .dep-content .col h4::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #00978E;
+    top: 13px;
+    right: 75px;
+}
+.content .introduce-of-office .mid .dep-content .col ul {
+    overflow: hidden;
+    margin-top: 18px;
+    padding-left: 16px;
+}
+.content .introduce-of-office .mid .dep-content .col ul li{
+    float: left;
+    width: 119px;
+    height: 34px;
+    border: 1px solid  #AAA9A9;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 21px;
+    margin-bottom: 25px;
 
+}
+.content .introduce-of-office .mid .dep-content .col ul li a {
+    display: block;
+    width: 121px;
+    height: 36px;
+    color: black;
+    font-size: 14px;
+}
+.content .introduce-of-office .mid .dep-content .col ul li a.first-two {
+    color: #00978E;
+    font-weight: bold;
+}
+
+.content .exp-introduce {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    padding-top: 24px;
+}
+.content .exp-introduce .more {
+    position: absolute;
+    right: 0;
+    top: 37px;
+    color:  #999999;
+}
+
+.content .exp-introduce ul {
+    padding-top: 40px;
+    overflow: hidden;
+}
+.content .exp-introduce ul li {
+    float: left;
+    width: 400px;
+    height: 240px;
+}
+.content .exp-introduce ul li .pic-box {
+    float: left;
+    width: 152px;
+    margin-right: 10px;
+}
+.content .exp-introduce ul li .word-box {
+    float: left;
+    width: 223px;
+    line-height: 27px;
+}
+
+footer {
+    padding-top: 67px;
+    height: 395px;
+    background-color: #FAFAFA;
+}
+footer .center {
+    width: 1200px;
+    margin: 0 auto;
+}
+footer .center .friendship-links ul li {
+    float: left;
+    padding: 20px 50px 0;
+}
+footer .center .friendship-links ul {
+    overflow: hidden;
+}
+footer .center .friendship-links ul li a {
+    font-size: 16px;
+    color: black;
+}
+footer .center address {
+    margin-top: 30px;
+}
+footer .center address ul {
+    padding-top: 18px;
+    width: 800px;
+    margin-left: 50px;
+}
+footer .center address ul li {
+    float: left;
+    width: 250px;
+}
+footer .center address ul li a {
+    line-height: 40px;
+}
 
 
 
