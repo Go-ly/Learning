@@ -34,6 +34,9 @@ header .header-top .logo {
 header .header-top .logo h1 {
     width: 192px;
     height: 63px;
+    background-image: url("../images/logo.png");
+    text-indent: -999em;
+    cursor: pointer;
 }
 header .header-top .tool {
     float: right;
@@ -66,6 +69,7 @@ header .header-top .tool .search {
     width: 264px;
     height: 28px;
     border: 1px solid rgba(153, 153, 153, 0.55);
+    border-radius: 4px;
 }
 header .header-top .tool .search input {
     float: left;
@@ -145,18 +149,26 @@ header .main-nav li a:hover {
     width: 56px;
     height: 74px;
     position: absolute;
-    background-color: rgba(128, 128, 128, 0.35);
+    background: url("../images/icons.png") no-repeat -42px -31px;
     top: 50%;
     margin-top: -37px;
+    border-radius: 10px;
+}
+.banner .center .left-btn:hover {
+    background-position: -160px -31px;
 }
 .banner .center .right-btn {
     width: 56px;
     height: 74px;
     position: absolute;
-    background-color: rgba(128, 128, 128, 0.35);
+    background: url("../images/icons.png") no-repeat -42px -121px;
     top: 50%;
     margin-top: -37px;
     right: 0;
+    border-radius: 10px;
+}
+.banner .center .right-btn:hover {
+    background-position: -160px -121px;
 }
 .banner .center h2 {
     width: 480px;
@@ -184,6 +196,7 @@ header .main-nav li a:hover {
     margin-right: 10px;
     background-color: white;
     cursor: pointer;
+    border-radius: 5px;
 }
 .banner ol li:last-child {
     margin-right: 0;
@@ -235,8 +248,7 @@ header .main-nav li a:hover {
     height: 376px;
 }
 .content .news-and-notice .news h3 {
-    height: 33px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .content .news-and-notice .news .news-content .hot-news {
     position: relative;
@@ -283,8 +295,7 @@ header .main-nav li a:hover {
 }
 
 .content .news-and-notice h3 {
-    height: 33px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .content .news-and-notice ol li span {
@@ -378,7 +389,7 @@ header .main-nav li a:hover {
     line-height: 34px;
     margin-right: 21px;
     margin-bottom: 25px;
-
+    border-radius: 6px;
 }
 .content .introduce-of-office .mid .dep-content .col ul li a {
     display: block;
@@ -423,6 +434,12 @@ header .main-nav li a:hover {
     float: left;
     width: 223px;
     line-height: 27px;
+}
+.content h3 {
+    border-left: 8px solid #00978E;
+    height: 22px;
+    padding-left: 10px;
+    line-height: 22px;
 }
 
 footer {
