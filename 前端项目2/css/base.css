@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "PingFangSCRegular";
+    src: url("../font/PingFangSCRegular.ttf") format("truetype");
+}
+
+body {
+    font-family: "PingFangSCRegular";
+}
+.clearfix {
+    overflow: hidden;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.tac {
+    text-align: center;
+}
+.center-wrap {
+    width: 1152px;
+    margin: 0 auto;
+}
+.db {
+    display: block;
+}
+.dib {
+    display: inline-block;
+}
