@@ -1,4 +1,3 @@
-import org.omg.CORBA.Object;
 
 import java.util.*;
 
@@ -8,6 +7,14 @@ public class MyArrayList<E> implements List<E> {
     public MyArrayList() {
         this.array = (E[])new Object[16];
         this.size = 0;
+    }
+    public MyArrayList(int initinalCapacity) {
+        this.array = (E[])new Object[initinalCapacity];
+        this.size = 0;
+    }
+    public MyArrayList(Collection<E> c) {
+        this(c.size() * 2);
+        addAll(c);
     }
     @Override
     public int size() {
@@ -19,10 +26,7 @@ public class MyArrayList<E> implements List<E> {
         return this.size == 0;
     }
 
-    @Override
-    public boolean contains(java.lang.Object o) {
-        return false;
-    }
+
 
     @Override
     public boolean contains(Object o) {
@@ -44,7 +48,7 @@ public class MyArrayList<E> implements List<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new MyArrayListIterator<>(size, array);
     }
 
     @Override
@@ -74,10 +78,6 @@ public class MyArrayList<E> implements List<E> {
         return true;
     }
 
-    @Override
-    public boolean remove(java.lang.Object o) {
-        return false;
-    }
 
     // 时间复杂度：O(N)
     private void ensureCapacity() {
@@ -124,7 +124,10 @@ public class MyArrayList<E> implements List<E> {
 
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        throw new UnsupportedOperationException();
+        for (E e : c) {
+            add(index, e);
+        }
+        return true;
     }
 
     // 删除list和c中有交集的部分
@@ -189,15 +192,7 @@ public class MyArrayList<E> implements List<E> {
         return oldValue;
     }
 
-    @Override
-    public int indexOf(java.lang.Object o) {
-        return 0;
-    }
 
-    @Override
-    public int lastIndexOf(java.lang.Object o) {
-        return 0;
-    }
 
     // O(n)
     @Override
