@@ -63,9 +63,7 @@ public class MyArrayList<E> implements List<E> {
             System.arraycopy(this.array, 0, a, 0, this.size);
             return a;
         } else {
-            T[] newArray = (T[])new Object[this.size];
-            System.arraycopy(this.array, 0, newArray, 0, this.size);
-            return newArray;
+            return (T[])Arrays.copyOf(this.array, this.size, a.getClass());
         }
     }
 
